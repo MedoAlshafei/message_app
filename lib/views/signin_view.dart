@@ -7,6 +7,8 @@ import '../widgets/my_text_Field.dart';
 class SigninView extends StatefulWidget {
   const SigninView({super.key});
 
+  static const String id = 'signin_view';
+
   @override
   State<SigninView> createState() => _SigninViewState();
 }

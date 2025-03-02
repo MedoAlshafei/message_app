@@ -19,7 +19,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.orange),
       ),
-      home: ChatView(),
+      // home: ChatView(),
+      initialRoute: WelcomeHomeView.id,
+      routes: {
+        WelcomeHomeView.id: (context) => WelcomeHomeView(),
+        SigninView.id: (context) => SigninView(),
+        RegistrationView.id: (context) => RegistrationView(),
+        ChatView.id: (context) => ChatView(),
+      },
     );
   }
 }

@@ -7,6 +7,8 @@ import '../widgets/my_text_Field.dart';
 class RegistrationView extends StatefulWidget {
   const RegistrationView({super.key});
 
+  static const String id = 'registration_view';
+
   @override
   State<RegistrationView> createState() => _RegistrationViewState();
 }

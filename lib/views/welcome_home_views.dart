@@ -1,16 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:message_me/views/registration_view.dart';
+import 'package:message_me/views/signin_view.dart';
 
 import '../constants.dart';
 import '../widgets/my_button.dart';
 
-class WelcomeHomeViews extends StatefulWidget {
-  const WelcomeHomeViews({super.key});
+class WelcomeHomeView extends StatefulWidget {
+  const WelcomeHomeView({super.key});
+
+  static const String id = 'welcome_home_views';
 
   @override
-  State<WelcomeHomeViews> createState() => _WelcomeHomeViewsState();
+  State<WelcomeHomeView> createState() => _WelcomeHomeViewState();
 }
 
-class _WelcomeHomeViewsState extends State<WelcomeHomeViews> {
+class _WelcomeHomeViewState extends State<WelcomeHomeView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,8 +46,20 @@ class _WelcomeHomeViewsState extends State<WelcomeHomeViews> {
               ],
             ),
             const SizedBox(height: 30),
-            MyButton(color: kDarkOrange, title: 'Sign in', onPressed: () {}),
-            MyButton(color: kDarkBlue, title: 'Register', onPressed: () {}),
+            MyButton(
+              color: kDarkOrange,
+              title: 'Sign in',
+              onPressed: () {
+                Navigator.pushNamed(context, SigninView.id);
+              },
+            ),
+            MyButton(
+              color: kDarkBlue,
+              title: 'Register',
+              onPressed: () {
+                Navigator.pushNamed(context, RegistrationView.id);
+              },
+            ),
           ],
         ),
       ),

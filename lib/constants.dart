@@ -1,24 +1,31 @@
 import 'package:flutter/material.dart';
 
-// Primary Colors
-const Color kPrimaryColor = Color(0xffCF7C00);
-const Color kSecondaryColor = Color(0xffF2F2F2);
-const Color kTextColor = Color(0xff000000);
+// Light Mode Colors
+const Color kPrimaryLightColor = Color(0xffFFB74D); // Light Orange
+const Color kSecondaryLightColor = Color(0xff3949AB); // Light Blue
+const Color kTextLightColor = Color(0xff000000);
 
-// Orange Variations
-const Color kLightOrange = Color(0xffFFAB40);
-const Color kDarkOrange = Color(0xffCC6E00);
-const Color kPaleOrange = Color(0xffFFE0B2);
+// Dark Mode Colors
+const Color kPrimaryDarkColor = Color(0xffFF5722); // Deep Orange
+const Color kSecondaryDarkColor = Color(0xff283593); // Blue
+const Color kTextDarkColor = Color(0xffFFFFFF);
 
-// Complementary Colors
-const Color kDeepOrange = Color(0xffFF5722);
-const Color kAccentOrange = Color(0xffFF9100);
-const Color kSurfaceOrange = Color(0xffFFF3E0);
+// Light Mode Variations
+const Color kLightOrange = Color(0xffFFE0B2);
+const Color kLightBlue = Color(0xffE8EAF6);
 
-// Text Colors on Orange
-const Color kOnOrangeText = Color(0xffFFFFFF);
-const Color kOnLightOrangeText = Color(0xff442700);
+// Dark Mode Variations
+const Color kDarkOrange = Color(0xffF57C00);
+const Color kDarkBlue = Color(0xff0D47A1);
+
+// Accent Colors
+const Color kAccentLightOrange = Color(0xffFFF3E0);
+const Color kAccentDarkBlue = Color(0xff1A237E);
+
+// Text Colors
+const Color kOnLightText = Color(0xff263238);
+const Color kOnDarkText = Color(0xffFFFFFF);
 
 // Background Shades
 const Color kBackgroundLight = Color(0xffFFFBF6);
-const Color kBackgroundDark = Color(0xffFFF0DB);
+const Color kBackgroundDark = Color(0xff1A237E);

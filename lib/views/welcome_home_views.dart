@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../constants.dart';
+import '../widgets/my_button.dart';
 
 class WelcomeHomeViews extends StatefulWidget {
   const WelcomeHomeViews({super.key});
@@ -22,15 +23,15 @@ class _WelcomeHomeViewsState extends State<WelcomeHomeViews> {
           children: [
             Column(
               children: [
-                Container(
+                SizedBox(
                   height: 180,
-                  child: Icon(
+                  child: const Icon(
                     Icons.message_rounded,
                     color: kPrimaryLightColor,
                     size: 120,
                   ),
                 ),
-                Text(
+                const Text(
                   'MessageMe',
                   style: TextStyle(
                     fontSize: 40,
@@ -40,34 +41,10 @@ class _WelcomeHomeViewsState extends State<WelcomeHomeViews> {
                 ),
               ],
             ),
-            SizedBox(height: 30),
-            MyButton(),
+            const SizedBox(height: 30),
+            MyButton(color: kDarkOrange, title: 'Sign in', onPressed: () {}),
+            MyButton(color: kDarkBlue, title: 'Register', onPressed: () {}),
           ],
-        ),
-      ),
-    );
-  }
-}
-
-class MyButton extends StatelessWidget {
-  const MyButton({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 16),
-      child: Material(
-        elevation: 5,
-        color: kDarkOrange,
-        borderRadius: BorderRadius.circular(10),
-        child: MaterialButton(
-          onPressed: () {},
-          minWidth: 200,
-          height: 42,
-          child: Text(
-            'sign in',
-            style: TextStyle(color: Colors.white, fontSize: 20),
-          ),
         ),
       ),
     );

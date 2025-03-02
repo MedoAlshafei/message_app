@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:message_me/views/chat_view.dart';
+import 'package:message_me/views/registration_view.dart';
+import 'package:message_me/views/signin_view.dart';
 import 'package:message_me/views/welcome_home_views.dart';
 
 void main() {
@@ -16,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.orange),
       ),
-      home: WelcomeHomeViews(),
+      home: ChatView(),
     );
   }
 }

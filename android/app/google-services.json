@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "863941088727",
+    "project_id": "messageme-7c3cc",
+    "storage_bucket": "messageme-7c3cc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863941088727:android:6e308210c8aedfd73f2792",
+        "android_client_info": {
+          "package_name": "com.alshafey.message_me"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_VYFNIZzAs6Lmcq_LtIkm4QahnyPuTMY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
